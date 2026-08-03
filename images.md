@@ -1,4 +1,4 @@
-# 🐳 Docker Image Commands (Number-wise with Examples)
+# 🐳 Docker Image Commands
 
 ---
 
