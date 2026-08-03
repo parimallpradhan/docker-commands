@@ -1,5 +1,4 @@
-# Docker --> Build --> ship --> Run
-
+# 👉 Docker = Build once → Ship anywhere → Run everywhere
 
 
 # 🐳 Docker Commands - DevOps Quick Guide
