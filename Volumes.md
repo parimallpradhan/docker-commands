@@ -20,7 +20,7 @@ docker run -d -p 8080:8080 --name tomcat1 tomcat
 ### 📦 Deploy WAR File
 
 ```bash
-docker cp target/ecommerce-app.war tomcat1:/usr/local/tomcat/webapps/
+docker cp /home/ubuntu/ecommerce-app/target/ecommerce-app.war tomcat1:/usr/local/tomcat/webapps/
 
 ```
 
