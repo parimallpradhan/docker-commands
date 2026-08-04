@@ -94,7 +94,7 @@ mvn -version
 ## 📥 Step 4: Clone Repository
 
 ```bash
-git clone https://github.com/<your-username>/ecommerce-app.git
+git clone https://github.com/parimallpradhan/ecommerce-app.git
 cd ecommerce-app
 ```
 
