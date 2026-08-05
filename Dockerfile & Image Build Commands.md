@@ -1,5 +1,55 @@
 # 🧱 Dockerfile & Image Build Commands
 
+
+## Simple Dockerfile (Ubuntu + Git + Java)
+
+```dockerfile
+# Base Image
+FROM ubuntu:24.04
+
+# Install Git and Java
+RUN apt-get update && \
+    apt-get install -y git openjdk-21-jdk
+
+# Default command
+CMD ["/bin/bash"]
+```
+
+### Build
+
+```bash
+docker build -t myimage:v1 .
+```
+
+### Run
+
+```bash
+docker run -it --name c1 myimage:v1
+```
+
+### Verify
+
+```bash
+git --version
+```
+
+```bash
+java -version
+```
+
+---
+
+```dockerfile
+FROM ubuntu:24.04     # Base Image
+
+RUN apt-get update && \
+    apt-get install -y git openjdk-21-jdk   # Install software
+
+CMD ["/bin/bash"]     # Start Bash when the container runs
+```
+
+
+
 ---
 
 ## 🏗️ 1. Build Image
