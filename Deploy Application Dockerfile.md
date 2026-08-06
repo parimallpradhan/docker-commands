@@ -83,6 +83,7 @@ http://localhost:8080/app
 
 ```bash
 docker tag manual-app:v1 yourdockerhub/manual-app:v1
+docker login
 docker push yourdockerhub/manual-app:v1
 ```
 
