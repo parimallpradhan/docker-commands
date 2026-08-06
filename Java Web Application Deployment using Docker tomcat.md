@@ -145,6 +145,7 @@ EXPOSE 8080
 # Step 5: Start Tomcat
 CMD ["catalina.sh", "run"]
 ```
+<img width="1572" height="387" alt="image" src="https://github.com/user-attachments/assets/a00aa4d6-459e-45e2-9a4b-39021efdf234" />
 
 ---
 ## 🐳 Step 7: Build & Run Tomcat Container
