@@ -82,12 +82,22 @@ http://localhost:8080/app
 # ☁️ Push to Docker Hub 
 
 ```bash
-docker tag manual-app:v1 yourdockerhub/manual-app:v1
+docker tag ecommerce:v1  parimal1984/ecommerce:v1
 docker login
-docker push yourdockerhub/manual-app:v1
+docker push parimal1984/ecommerce:v1
 ```
 
 ---
+
+# ☁️ How to assign multiple tags
+```bash
+docker tag ecommerce:v1 parimal1984/ecommerce:latest
+docker tag ecommerce:v1 parimal1984/ecommerce:prod
+```
+
+---
+
+
 
 # 🧱 Docker Compose (Final Step)
 
