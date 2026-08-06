@@ -147,12 +147,20 @@ CMD ["catalina.sh", "run"]
 ```
 <img width="1572" height="387" alt="image" src="https://github.com/user-attachments/assets/a00aa4d6-459e-45e2-9a4b-39021efdf234" />
 
+
+<img width="1866" height="90" alt="image" src="https://github.com/user-attachments/assets/ca69a37d-5830-45af-b8b8-fe12c0f0685c" />
+
 ---
 ## 🐳 Step 7: Build & Run Tomcat Container
 
 ```bash
 # Build image
 docker build -t ecommerce-app:v1 .
+```
+<img width="1627" height="298" alt="image" src="https://github.com/user-attachments/assets/36737f64-c429-4a8d-8fb3-4a89d2090b18" />
+
+```bash
+# Run container
 
 docker run -d -p 8080:8080 --name ecommerce-app ecommerce-app:v1
 ```
@@ -160,18 +168,11 @@ docker run -d -p 8080:8080 --name ecommerce-app ecommerce-app:v1
 ```bash
 docker ps
 ```
+<img width="1707" height="135" alt="image" src="https://github.com/user-attachments/assets/0feeea8d-601d-445b-8d7d-753237c2a43f" />
 
 ---
 
-## ☁️ Step 8 :Tag image and Push to Docker Hub 
-```bash
-docker tag ecommerce-app:v1  parimal1984/ecommerce-app:v1
-docker login
-docker push parimal1984/ecommerce-app:v1
-```
-
----
-## 🌍 Step 9: Access Application
+## 🌍 Step 8: Access Application
 
 ```
 http://<EC2-PUBLIC-IP>:8080/ecommerce-app
@@ -182,8 +183,41 @@ Example:
 ```
 http://13.235.91.137:8080/ecommerce-app
 ```
+<img width="1508" height="707" alt="image" src="https://github.com/user-attachments/assets/8192bd79-2727-4d58-bd89-e09ffa5f7e04" />
 
 ---
+
+
+## ☁️ Step 9 :Now Tag image and Push to Docker Hub 
+```bash
+docker tag ecommerce-app:v1  parimal1984/ecommerce-app:v1
+```
+<img width="1517" height="200" alt="image" src="https://github.com/user-attachments/assets/5ecc49ff-7eaa-41db-82c0-4d63a1651273" />
+
+
+```bash
+docker login
+docker push parimal1984/ecommerce-app:v1
+```
+<img width="1493" height="292" alt="image" src="https://github.com/user-attachments/assets/efb67a0f-abc9-4cd3-9a82-969b0018d010" />
+
+
+<img width="1288" height="850" alt="image" src="https://github.com/user-attachments/assets/beaa5655-2bbd-4b7d-87eb-8b4da2e3214a" />
+
+
+<img width="666" height="763" alt="image" src="https://github.com/user-attachments/assets/b7aed25a-6894-46e3-94c3-bb2bfb905627" />
+
+
+```bash
+docker push parimal1984/ecommerce-app:v1
+```
+<img width="1652" height="208" alt="image" src="https://github.com/user-attachments/assets/c3c20edd-8705-4f9e-8303-4ebe7a9fdc3f" />
+
+<img width="1585" height="212" alt="image" src="https://github.com/user-attachments/assets/35f07ce2-52b6-4011-9bf6-5d2df681357a" />
+
+
+---
+
 ---
 skip below
 ---
