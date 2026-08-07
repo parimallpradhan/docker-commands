@@ -3,7 +3,7 @@ Perfect 👌 — this is now a **complete classroom-ready version** with:
 ✅ Simple explanation
 ✅ Real-life analogy
 ✅ Hands-on commands
-✅ **Real-time student task (VERY IMPORTANT for practice)**
+
 
 ---
 
@@ -36,10 +36,8 @@ docker run -it ubuntu:24.04 bash
 
 ### 🎯 Real-time Task
 
-👉 Ask students:
-
-* Run Ubuntu container
-* Check OS version:
+👉 * Run Ubuntu container
+    * Check OS version:
 
 ```bash
 cat /etc/os-release
