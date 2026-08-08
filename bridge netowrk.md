@@ -46,6 +46,9 @@ docker network inspect bridge
 
 ```bash
 docker exec -it c1 sh
+
+apt update
+apt install -y iputils-ping
 ```
 
 Inside container:
