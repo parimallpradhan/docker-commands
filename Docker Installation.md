@@ -27,7 +27,13 @@ EOF
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 # 3.After installation, verify that Docker is running:
+
 ```bash
 sudo systemctl status docker
+```
+# 4. Docker compose version
+
+```bash
+docker compose version
 ```
 
